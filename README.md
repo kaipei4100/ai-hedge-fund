@@ -32,6 +32,20 @@ Note: the system does not actually make any trades.
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/virattt?style=social)](https://twitter.com/virattt)
 
+## Running the Project
+
+See the original repo for full setup instructions. Quick reference for my own use:
+
+```bash
+# Run analysis on a single ticker
+python main.py --ticker AAPL
+
+# Run with specific agents only (useful for focused comparisons)
+python main.py --ticker AAPL --agents ben_graham,charlie_munger,warren_buffett
+```
+
+> **Tip (personal):** When comparing value vs. growth agents, I typically run Graham + Munger + Buffett against Cathie Wood + Fisher and log the signal outputs side by side for review.
+
 ## Disclaimer
 
 This project is for **educational and research purposes only**.
@@ -42,13 +56,4 @@ This project is for **educational and research purposes only**.
 - Consult a financial advisor for investment decisions
 - Past performance does not indicate future results
 
-By using this software, you agree to use it solely for learning purposes.
-
-## Table of Contents
-- [How to Install](#how-to-install)
-- [How to Run](#how-to-run)
-  - [⌨️ Command Line Interface](#️-command-line-interface)
-  - [🖥️ Web Application](#️-web-application)
-- [How to Contribute](#how-to-contribute)
-- [Feature Requests](#feature-requests)
-- [License](#licens
+By using thi
