@@ -42,18 +42,10 @@ python main.py --ticker AAPL
 
 # Run with specific agents only (useful for focused comparisons)
 python main.py --ticker AAPL --agents ben_graham,charlie_munger,warren_buffett
+
+# My go-to command for value vs. growth comparison
+# Value camp: Graham, Munger, Buffett | Growth camp: Cathie Wood, Fisher, Lynch
+python main.py --ticker AAPL --agents ben_graham,charlie_munger,warren_buffett,cathie_wood,phil_fisher,peter_lynch
 ```
 
-> **Tip (personal):** When comparing value vs. growth agents, I typically run Graham + Munger + Buffett against Cathie Wood + Fisher and log the signal outputs side by side for review.
-
-## Disclaimer
-
-This project is for **educational and research purposes only**.
-
-- Not intended for real trading or investment
-- No investment advice or guarantees provided
-- Creator assumes no liability for financial losses
-- Consult a financial advisor for investment decisions
-- Past performance does not indicate future results
-
-By using thi
+> **Tip (person
