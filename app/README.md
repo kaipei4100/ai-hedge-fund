@@ -104,11 +104,11 @@ OPENAI_API_KEY=your-openai-api-key
 # For running LLMs hosted by groq (deepseek, llama3, etc.)
 GROQ_API_KEY=your-groq-api-key
 
-# For getting financial data (required for stock analysis)
+# For getting financial data (required)
 FINANCIAL_DATASETS_API_KEY=your-financial-datasets-api-key
 
-# Optional: For Anthropic Claude models
-ANTHROPIC_API_KEY=your-anthropic-api-key
+# For getting financial data via Polygon.io (optional alternative)
+POLYGON_API_KEY=your-polygon-api-key
 ```
 
-> **Note (personal):** I primarily use `OPENAI_API_KEY` + `FINANCIAL_DATASETS_API_KEY` for day-to-day testing. The Groq key is optional but noticeably faster for quick runs with llama3.
+> **Note (personal):** I've found that setting up `FINANCIAL_DATASETS_API_KEY` first is the quickest way to get the app running end-to-end. The free tier is sufficient for initial exploration.
