@@ -104,11 +104,39 @@ OPENAI_API_KEY=your-openai-api-key
 # For running LLMs hosted by groq (deepseek, llama3, etc.)
 GROQ_API_KEY=your-groq-api-key
 
-# For getting financial data (required)
+# For getting financial data (required for stock prices, financials, etc.)
 FINANCIAL_DATASETS_API_KEY=your-financial-datasets-api-key
-
-# For getting financial data via Polygon.io (optional alternative)
-POLYGON_API_KEY=your-polygon-api-key
 ```
 
-> **Note (personal):** I've found that setting up `FINANCIAL_DATASETS_API_KEY` first is the quickest way to get the app running end-to-end. The free tier is sufficient for initial exploration.
+> **Note (personal):** I've found that setting up the `.env` file before running any scripts saves a lot of headache — the app will start but silently fail on API calls if keys are missing.
+
+### Running the Application
+
+Start the backend:
+```bash
+cd app/backend
+poetry run uvicorn main:app --reload
+```
+
+Start the frontend (in a separate terminal):
+```bash
+cd app/frontend
+npm install
+npm run dev
+```
+
+## Detailed Documentation
+
+- [Backend README](backend/README.md)
+- [Frontend README](frontend/README.md)
+
+## Disclaimer
+
+This project is for **educational and research purposes only**. It is not intended to be used as financial advice or a real trading system. Always do your own research before making any investment decisions.
+
+## Troubleshooting
+
+- **Port already in use**: Kill the process using the port or change the port in the config
+- **Poetry not found**: Install Poetry from https://python-poetry.org/
+- **Node.js not found**: Install Node.js from https://nodejs.org/
+- **API key errors**: Make sure your `.env` file is in the root directory and contains valid keys
